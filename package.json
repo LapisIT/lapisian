@@ -27,16 +27,32 @@
   },
   "private": true,
   "dependencies": {
+    "node-vault": "^0.9.21",
+    "ramda": "^0.27.1",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@nrwl/cli": "12.0.8",
+    "@nrwl/eslint-plugin-nx": "12.0.8",
+    "@nrwl/jest": "12.0.8",
+    "@nrwl/linter": "12.0.8",
+    "@nrwl/node": "^12.0.8",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/tao": "12.0.8",
     "@nrwl/workspace": "12.0.8",
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "26.0.8",
     "@types/node": "14.14.33",
-    "dotenv": "8.2.0",
+    "@types/node-vault": "^0.9.13",
+    "@types/ramda": "^0.27.40",
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "dotenv": "^8.2.0",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "26.2.2",
     "prettier": "2.2.1",
+    "ts-jest": "26.4.0",
     "ts-node": "~9.1.1",
     "typescript": "~4.1.4"
   }

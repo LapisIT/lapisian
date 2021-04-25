@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@lapisian/vault-env": ["packages/vault-env/src/index.ts"],
+      "@lapis-it/vault-env-ts": ["packages/vault-env-ts/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
