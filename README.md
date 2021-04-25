@@ -3,11 +3,12 @@
 # Lapisian
 
 ```
-nx g @nrwl/node:library --name=vault-env-ts \
+nx g @nrwl/node:library --name=vault-env-config \
 --linter=eslint --unitTestRunner=jest \
 --publishable --buildable \
---importPath=@lapis-it/vault-env-ts \
+--importPath=@lapis-it/vault-env-config \
 --testEnvironment=jsdom --no-interactive --dry-run
+
 
 ```
 

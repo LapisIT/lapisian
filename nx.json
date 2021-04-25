@@ -16,6 +16,6 @@
       }
     }
   },
-  "projects": { "vault-env-ts": { "tags": [] } },
+  "projects": { "vault-env-config": { "tags": [] } },
   "workspaceLayout": { "appsDir": "packages", "libsDir": "packages" }
 }

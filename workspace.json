@@ -1,20 +1,22 @@
 {
   "version": 2,
   "projects": {
-    "vault-env-ts": {
-      "root": "packages/vault-env-ts",
-      "sourceRoot": "packages/vault-env-ts/src",
+    "vault-env-config": {
+      "root": "packages/vault-env-config",
+      "sourceRoot": "packages/vault-env-config/src",
       "projectType": "library",
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "options": { "lintFilePatterns": ["packages/vault-env-ts/**/*.ts"] }
+          "options": {
+            "lintFilePatterns": ["packages/vault-env-config/**/*.ts"]
+          }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/packages/vault-env-ts"],
+          "outputs": ["coverage/packages/vault-env-config"],
           "options": {
-            "jestConfig": "packages/vault-env-ts/jest.config.js",
+            "jestConfig": "packages/vault-env-config/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -22,11 +24,11 @@
           "executor": "@nrwl/node:package",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/packages/vault-env-ts",
-            "tsConfig": "packages/vault-env-ts/tsconfig.lib.json",
-            "packageJson": "packages/vault-env-ts/package.json",
-            "main": "packages/vault-env-ts/src/index.ts",
-            "assets": ["packages/vault-env-ts/*.md"]
+            "outputPath": "dist/packages/vault-env-config",
+            "tsConfig": "packages/vault-env-config/tsconfig.lib.json",
+            "packageJson": "packages/vault-env-config/package.json",
+            "main": "packages/vault-env-config/src/index.ts",
+            "assets": ["packages/vault-env-config/*.md"]
           }
         }
       }

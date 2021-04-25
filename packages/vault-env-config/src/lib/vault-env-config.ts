@@ -3,7 +3,7 @@ import * as R from 'ramda';
 dotenv.config();
 const { path, } = R;
 
-export const vaultEnv =  async (): Promise<string> => {
+export const vaultEnvConfig =  async (): Promise<string> => {
   const options = {
     endpoint: process.env.VAULT_ADDRESS,
   };

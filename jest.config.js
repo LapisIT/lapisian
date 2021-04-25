@@ -1,3 +1,3 @@
 module.exports = {
-  projects: [, '<rootDir>/packages/vault-env-ts'],
+  projects: [, '<rootDir>/packages/vault-env-config'],
 };
