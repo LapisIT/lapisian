@@ -1,5 +1,7 @@
 # Lapisian
 
+# Generate buildable and publishable libs
+https://nx.dev/latest/angular/structure/buildable-and-publishable-libraries
 ```
 nx g @nrwl/node:library --name=vault-env-config \
 --linter=eslint --unitTestRunner=jest \
@@ -7,15 +9,35 @@ nx g @nrwl/node:library --name=vault-env-config \
 --importPath=@lapis-it/vault-env-config \
 --testEnvironment=jsdom --no-interactive --dry-run
 
-
 ```
+Name already taken:
+* https://github.com/faradayio/vault-env-js
+* https://www.npmjs.com/package/vault-env
 
-https://github.com/faradayio/vault-env-js
-https://www.npmjs.com/package/vault-env
+# Publish
+https://docs.npmjs.com/configuring-your-registry-settings-as-an-npm-enterprise-user#install-npmrc
+```
+npm i npmrc -g
 
+npmrc -c lapis
+npm config set registry https://svgitlab.spatialvision.com.au/api/v4/packages/npm/
+
+npmrc -c open-source
+npm config set registry https://registry.npmjs.org/
+
+npmrc lapis
+```
+https://github.com/organizations/LapisIT/settings/secrets/actions
+
+
+
+## Target
 https://www.npmjs.com/settings/lapis-it/members
 https://github.com/LapisIT/lapisian
 
+
+## GitHub actions
+https://github.com/marketplace/actions/nrwl-nx
 
 
 ## Adding capabilities to your workspace
