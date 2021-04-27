@@ -11,6 +11,6 @@ const { path, } = R;
 export const readAsDotEnv =  async (keyAsPath: string, dotEnvPath?: string): Promise<string> => {
   const vault = await initVault();
   const response = await vault.read(keyAsPath);
-  const data: object = path(['data', 'data'], response);
+  const data = path(['data', 'data'], response);
   return jsonToDotEnv(dotEnvPath, data);
 }

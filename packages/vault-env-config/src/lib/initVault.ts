@@ -13,7 +13,7 @@ export const initVault =  async (): Promise<NodeVault.client> => {
 
   // process.env.DEBUG = 'node-vault';
 
-  const vault = require("node-vault")(options);
+  const vault = NodeVault(options);
 
   const res =  await vault.initialized();
 
