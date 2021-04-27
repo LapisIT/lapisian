@@ -1,6 +1,10 @@
 import * as R from 'ramda';
 const { when, isNil, equals, complement, curry } = R;
 
+/**
+ * curry, hence the value must exist!
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const exitWithErrorMsg = curry((msg, value) => {
   throw Error(msg);
 })
