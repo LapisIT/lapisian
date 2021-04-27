@@ -14,7 +14,9 @@ Name already taken:
 * https://github.com/faradayio/vault-env-js
 * https://www.npmjs.com/package/vault-env
 
-# Publish
+# Publish using GitHub action
+https://tane.dev/2020/05/publishing-npm-libraries-using-nx-and-github-actions/
+https://docs.npmjs.com/cli/v6/commands/npm-publish
 https://docs.npmjs.com/configuring-your-registry-settings-as-an-npm-enterprise-user#install-npmrc
 ```
 npm i npmrc -g
@@ -27,7 +29,9 @@ npm config set registry https://registry.npmjs.org/
 
 npmrc lapis
 ```
+# Secret for Lapis npm tokens
 https://github.com/organizations/LapisIT/settings/secrets/actions
+https://www.npmjs.com/settings/lapis-it/packages
 
 
 
