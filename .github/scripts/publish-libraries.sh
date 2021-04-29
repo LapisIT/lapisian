@@ -31,7 +31,7 @@ if [ "$AFFECTED" != "" ]; then
   while IFS= read -r -d $' ' lib; do
     echo "Setting version for $lib"
     cd "$PARENT_DIR"
-    cd "$ROOT_DIR/libs/${lib/-//}"
+    cd "$ROOT_DIR/packages/${lib/-//}"
     npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
     echo "Building $lib"
     cd "$PARENT_DIR"
@@ -43,7 +43,7 @@ if [ "$AFFECTED" != "" ]; then
   while IFS= read -r -d $' ' lib; do
     if [ "$DRY_RUN" == "False" ]; then
       echo "Publishing $lib"
-      npm publish "$ROOT_DIR/dist/libs/${lib/-//}" --access=public
+      npm publish "$ROOT_DIR/dist/packages/${lib/-//}" --access=public
     else
       echo "Dry Run, not publishing $lib"
     fi
