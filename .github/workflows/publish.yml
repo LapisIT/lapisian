@@ -1,4 +1,4 @@
-name: Merge on master
+name: Publish at merge on master
 on:
   pull_request:
     branches:
