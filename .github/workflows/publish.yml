@@ -25,10 +25,10 @@ jobs:
           fetch-depth: 0
 
       - name: Install environment
-      uses: actions/setup-node@v1
-      - run: ls -alh
-      - run: git fetch --no-tags --prune --depth=5 origin master
-      - run: npm ci
+        uses: actions/setup-node@v1
+        - run: ls -alh
+        - run: git fetch --no-tags --prune --depth=5 origin master
+        - run: npm ci
 
       - name: Deploy
         if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
