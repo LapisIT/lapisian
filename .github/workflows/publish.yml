@@ -20,6 +20,11 @@ jobs:
       - name: Checkout Code
         if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          - run: |
+              git fetch --no-tags --prune --depth=5 origin master
 
       - name: Install environment
         run: npm ci
