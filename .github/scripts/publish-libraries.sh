@@ -24,6 +24,7 @@ DRY_RUN=${DRY_RUN:-"False"}
 # --base=HEAD~1 --head=HEAD --with-deps
 #AFFECTED=$(node node_modules/.bin/nx affected:libs --plain -- --base=develop )
 AFFECTED=$(npm run affected:libs)
+echo "AFFECTED: $AFFECTED"
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
