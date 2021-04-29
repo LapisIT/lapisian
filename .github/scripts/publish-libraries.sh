@@ -32,7 +32,7 @@ if [ "$AFFECTED" != "" ]; then
   while IFS= read -r -d $' ' lib; do
     echo "Setting version for $lib"
     cd "$PARENT_DIR"
-    cd "$ROOT_DIR/packages/${lib/-//}"
+    cd "$ROOT_DIR/packages/${lib}"
     npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
     echo "Building $lib"
     cd "$PARENT_DIR"
