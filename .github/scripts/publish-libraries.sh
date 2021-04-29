@@ -24,13 +24,13 @@ DRY_RUN=${DRY_RUN:-"False"}
 # --base=HEAD~1 --head=HEAD --with-deps
 #AFFECTED=$(node node_modules/.bin/nx affected:libs --plain -- --base=develop )
 AFFECTED=$(npm run affected:libs)
-echo "AFFECTED: $AFFECTED"
+echo "AFFECTED: '$AFFECTED'"
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
 
   while IFS= read -r -d $' ' lib; do
-    echo "Setting version for $lib"
+    echo "Setting version for $lib  '$ROOT_DIR/packages/${lib}'"
     cd "$PARENT_DIR"
     cd "$ROOT_DIR/packages/${lib}"
     npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
