@@ -24,6 +24,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
+
       - name: Fetch
         run: git fetch --no-tags --prune --depth=5 origin master
 
