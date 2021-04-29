@@ -21,7 +21,7 @@ COMMIT_MESSAGE="$(git log -1 --pretty=format:"%s")"
 RELEASE_TYPE=${1:-$(getBuildType "$COMMIT_MESSAGE")}
 DRY_RUN=${DRY_RUN:-"False"}
 # --base=HEAD~1 --head=HEAD --with-deps
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=HEAD~1)
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=master)
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
