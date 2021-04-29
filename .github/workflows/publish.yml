@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Deploy
-        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
+#        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
@@ -50,7 +50,7 @@ jobs:
         run: npm run docs
 
       - name: Commit files
-        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
+#        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -58,7 +58,7 @@ jobs:
           git commit -m "Release [skip-ci]" -a || true
 
       - name: Push changes
-        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
+#        if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ACTION_AUTH_TOKEN }}
