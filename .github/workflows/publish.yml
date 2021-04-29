@@ -1,11 +1,11 @@
-#name: Publish at merge on master
+name: Publish at merge on master
 #on:
 #  pull_request:
 #    branches:
 #      - feature/github-actions
 #      - master
 #    types: [ closed ]
-
+on: push
 jobs:
   publish:
     # Setup OS and Node Version
