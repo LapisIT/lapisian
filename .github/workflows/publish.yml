@@ -1,10 +1,10 @@
-name: Publish at merge on master
-on:
-  pull_request:
-    branches:
-      - feature/github-actions
-      - master
-    types: [ closed ]
+#name: Publish at merge on master
+#on:
+#  pull_request:
+#    branches:
+#      - feature/github-actions
+#      - master
+#    types: [ closed ]
 
 jobs:
   publish:
