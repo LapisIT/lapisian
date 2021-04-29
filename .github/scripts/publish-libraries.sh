@@ -22,8 +22,7 @@ COMMIT_MESSAGE="$(git log -1 --pretty=format:"%s")"
 RELEASE_TYPE=${1:-$(getBuildType "$COMMIT_MESSAGE")}
 DRY_RUN=${DRY_RUN:-"False"}
 
-# --base=HEAD~1 --head=HEAD --with-deps
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain -- --base=develop)
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=origin/master~1)
 # AFFECTED=$(npm run affected:libs)
 
 echo "$AFFECTED" != ""
