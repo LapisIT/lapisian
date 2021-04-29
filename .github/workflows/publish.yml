@@ -23,11 +23,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
-      - run: ls -alh
-      - run: git fetch --no-tags --prune --depth=5 origin master
 
       - name: Install environment
-        run: npm ci
+      uses: actions/setup-node@v1
+      - run: ls -alh
+      - run: git fetch --no-tags --prune --depth=5 origin master
+      - run: npm ci
 
       - name: Deploy
         if: github.event.pull_request.merged == true && contains(github.event.commits[0].message, '[skip-ci]') == false
