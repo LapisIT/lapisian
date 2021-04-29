@@ -1,5 +1,4 @@
 # vault-env-config
 
-* Get configuration items from Vault and store it in .env
-
-
+* Get kye/value configuration items from Vault and store them in .env
+* Write kye/value configuration items from .env to Vault
