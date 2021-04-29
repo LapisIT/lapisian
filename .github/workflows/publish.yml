@@ -22,11 +22,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.ref }}
-
           fetch-depth: 0
 
-          - run: |
-              git fetch --no-tags --prune --depth=5 origin master
+      - name: Fetch
+        run: git fetch --no-tags --prune --depth=5 origin master
 
       - name: Install environment
         run: npm ci
