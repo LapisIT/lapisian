@@ -12,5 +12,6 @@ export const readAsDotEnv =  async (keyAsPath: string, dotEnvPath?: string): Pro
   const vault = await initVault();
   const response = await vault.read(keyAsPath);
   const data = path(['data', 'data'], response);
-  return jsonToDotEnv(dotEnvPath, data);
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  return jsonToDotEnv(dotEnvPath, data as object);
 }
