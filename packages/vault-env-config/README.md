@@ -2,3 +2,4 @@
 
 * Get configuration items from Vault and store it in .env
 
+
