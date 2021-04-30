@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env ts-node-script
 import * as dotenv from 'dotenv';
 import * as program from 'commander';
 dotenv.config();
