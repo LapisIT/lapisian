@@ -1,6 +1,8 @@
 import * as dotenv from 'dotenv';
 import * as NodeVault from 'node-vault';
 import { failIfNil } from './ensure';
+import * as Debug from 'debug';
+const debug = Debug('vault-env-config');
 
 export const initVault =  async (): Promise<NodeVault.client> => {
   dotenv.config();
@@ -17,7 +19,7 @@ export const initVault =  async (): Promise<NodeVault.client> => {
 
   const res =  await vault.initialized();
 
-  console.log('res: %j', res);
+  debug('vault.initialized: %j', res);
 
   return vault;
 }
