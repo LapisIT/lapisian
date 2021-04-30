@@ -1,10 +1,10 @@
 {
   "name": "@lapis-it/vault-env-config",
   "version": "0.4.0",
-  "author": "YOUR_AUTHOR",
+  "author": "Hiroki Gota",
   "license": "MIT",
   "bin": {
-    "@lapis-it/vault-env-config": "src/lib/bin/vec.js",
+    "@lapis-it/vec": "src/lib/bin/vec.js",
     "vec": "src/lib/bin/vec.js"
   },
   "repository": {
