@@ -32,6 +32,10 @@ echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE"
 
 AFFECTED=$(node node_modules/.bin/nx affected:packages --plain --base=$NX_BASE --head=HEAD)
 echo "AFFECTED: '$AFFECTED'"
+if [ "$AFFECTED" == "" ]; then
+  AFFECTED="vault-env-config"
+fi
+
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
