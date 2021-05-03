@@ -34,9 +34,9 @@ fi
 echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE"
 
 AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE --head=HEAD)
+AFFECTED=" vault-env-config "
 echo "AFFECTED: '$AFFECTED'"
 
-AFFECTED="vault-env-config "
 
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
