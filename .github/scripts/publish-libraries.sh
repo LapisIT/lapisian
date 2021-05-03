@@ -22,7 +22,7 @@ COMMIT_MESSAGE="$(git log -1 --pretty=format:"%s")"
 RELEASE_TYPE=${1:-$(getBuildType "$COMMIT_MESSAGE")}
 DRY_RUN=${DRY_RUN:-"False"}
 
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=HEAD~1  --head=HEAD)
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=HEAD~2  --head=HEAD)
 echo "AFFECTED: '$AFFECTED'"
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
