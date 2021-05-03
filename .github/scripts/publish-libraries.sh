@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -o errexit -o noclobber -o nounset -o pipefail
 
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
+
 # This script uses the parent version as the version to publish a library with
 
 getBuildType() {
@@ -43,7 +46,7 @@ if [ "$AFFECTED" != "" ]; then
     echo "Setting version for $lib  '$ROOT_DIR/packages/${lib}'"
     cd "$PARENT_DIR"
     cd "$ROOT_DIR/packages/${lib}"
-    npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
+    npm version "$RELEASE_TYPE" -f -m "Release $RELEASE_TYPE"
     echo "Building $lib"
     cd "$PARENT_DIR"
     npm run build "$lib" -- --with-deps #--prod
