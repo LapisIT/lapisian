@@ -2,7 +2,6 @@ name: Publish at merge on master
 on:
   pull_request:
     branches:
-      - feature/github-actions
       - master
     types: [ closed ]
 # on: push
