@@ -7,7 +7,6 @@ Get
 * Get key/value environment variables from Vault and store them in .env
 * Write key/value environment variables from .env to Vault
 
-
 # Usage
 ```
 
