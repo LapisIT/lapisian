@@ -28,9 +28,9 @@ then
 else
   export NX_BASE=$(git rev-parse HEAD~1)
 fi
-echo "NX_BASE: $NX_BASE"
+echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE"
 
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE)
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE --head=HEAD)
 echo "AFFECTED: '$AFFECTED'"
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
