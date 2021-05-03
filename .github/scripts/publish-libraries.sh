@@ -22,7 +22,15 @@ COMMIT_MESSAGE="$(git log -1 --pretty=format:"%s")"
 RELEASE_TYPE=${1:-$(getBuildType "$COMMIT_MESSAGE")}
 DRY_RUN=${DRY_RUN:-"False"}
 
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=HEAD~2  --head=HEAD)
+if [[ $GITHUB_BASE_REF ]]
+then
+  export NX_BASE=remotes/origin/$GITHUB_BASE_REF
+else
+  export NX_BASE=$(git rev-parse HEAD~1)
+fi
+echo "NX_BASE: $NX_BASE"
+
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE)
 echo "AFFECTED: '$AFFECTED'"
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
