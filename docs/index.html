@@ -58,6 +58,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<p><img src="src/images/vault.png" alt="Vault logo" title="Vault logo">
+				<img src="src/images/dotenv.png" alt="Dotenv logo" title="DotEnv logo"></p>
 				<a href="#vault-env-config" id="vault-env-config" style="color: inherit; text-decoration: none;">
 					<h1>vault-env-config</h1>
 				</a>
@@ -65,6 +67,18 @@
 					<li>Get key/value environmental variables from Vault and store them in .env</li>
 					<li>Write key/value environmental variables from .env to Vault</li>
 				</ul>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
+				<pre><code>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_ADDRESS</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">VOLT</span><span style="color: #000000">&gt; \</span>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_TOKEN</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">TOKEN</span><span style="color: #000000">&gt; \</span>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">DEBUG</span><span style="color: #000000">=</span><span style="color: #001080">vault</span><span style="color: #000000">-</span><span style="color: #001080">env</span><span style="color: #000000">-</span><span style="color: #001080">config</span><span style="color: #000000">; \</span>
+<span style="color: #001080">vec</span><span style="color: #000000"> </span><span style="color: #001080">read</span><span style="color: #000000"> \</span>
+<span style="color: #000000">-</span><span style="color: #001080">k</span><span style="color: #000000"> </span><span style="color: #001080">lapis</span><span style="color: #000000">/</span><span style="color: #001080">data</span><span style="color: #000000">/</span><span style="color: #001080">vancouver</span><span style="color: #000000">-</span><span style="color: #001080">ocean</span><span style="color: #000000">-</span><span style="color: #001080">wise</span><span style="color: #000000">/</span><span style="color: #001080">whale</span><span style="color: #000000">-</span><span style="color: #001080">watch</span><span style="color: #000000">/</span><span style="color: #001080">local</span><span style="color: #000000"> \</span>
+<span style="color: #000000">-</span><span style="color: #001080">e</span><span style="color: #000000"> ./.</span><span style="color: #001080">env</span>
+
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
