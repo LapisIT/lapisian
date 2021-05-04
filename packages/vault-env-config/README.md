@@ -1,5 +1,4 @@
-![Vault logo](src/images/vault.png "Vault logo")
-![Dotenv logo](src/images/dotenv.png "DotEnv logo")
+![Vault-Env-Config logo](src/images/vault-env-config.png "Vault logo")
 
 # vault-env-config
 Get 
