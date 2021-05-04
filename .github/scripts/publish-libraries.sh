@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -o errexit -o noclobber -o nounset -o pipefail
 
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
+
 # This script uses the parent version as the version to publish a library with
 
 getBuildType() {
@@ -22,8 +25,19 @@ COMMIT_MESSAGE="$(git log -1 --pretty=format:"%s")"
 RELEASE_TYPE=${1:-$(getBuildType "$COMMIT_MESSAGE")}
 DRY_RUN=${DRY_RUN:-"False"}
 
-AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=origin/master~1)
+if [[ $GITHUB_BASE_REF ]]
+then
+  export NX_BASE=remotes/origin/$GITHUB_BASE_REF
+else
+  export NX_BASE=$(git rev-parse HEAD~1)
+fi
+echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE"
+
+AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE --head=HEAD)
+AFFECTED=" vault-env-config "
 echo "AFFECTED: '$AFFECTED'"
+
+
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
@@ -32,7 +46,7 @@ if [ "$AFFECTED" != "" ]; then
     echo "Setting version for $lib  '$ROOT_DIR/packages/${lib}'"
     cd "$PARENT_DIR"
     cd "$ROOT_DIR/packages/${lib}"
-    npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
+    npm version "$RELEASE_TYPE" -f -m "Release $RELEASE_TYPE"
     echo "Building $lib"
     cd "$PARENT_DIR"
     npm run build "$lib" -- --with-deps #--prod
