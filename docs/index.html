@@ -58,26 +58,25 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><img src="src/images/vault.png" alt="Vault logo" title="Vault logo">
-				<img src="src/images/dotenv.png" alt="Dotenv logo" title="DotEnv logo"></p>
+				<p><img src="https://github.com/LapisIT/lapisian/raw/master/packages/vault-env-config/src/images/vault-env-config.png" alt="Vault-Env-Config logo" title="Vault logo"></p>
 				<a href="#vault-env-config" id="vault-env-config" style="color: inherit; text-decoration: none;">
 					<h1>vault-env-config</h1>
 				</a>
-				<p>Get </p>
+				<p>vault-env-config CLI provides 2 commands to integrate with Vault (<a href="https://www.vaultproject.io/">https://www.vaultproject.io/</a>)
+				using Vault API (node-vault <a href="https://www.npmjs.com/package/node-vault">https://www.npmjs.com/package/node-vault</a>).</p>
 				<ul>
-					<li>Get key/value environment variables from Vault and store them in .env</li>
+					<li>Read key/value environment variables from Vault and store them in .env</li>
 					<li>Write key/value environment variables from .env to Vault</li>
 				</ul>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>Usage</h1>
 				</a>
+				<ul>
+					<li>-k The Vault key/value secret path e.g. secret/data/:path (<a href="https://www.vaultproject.io/api-docs/secret/kv/kv-v2">https://www.vaultproject.io/api-docs/secret/kv/kv-v2</a>)<br>```
+					export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec read \</li>
+				</ul>
+				<p>-k lapis/data/my-project/local <br>-e ./local.env</p>
 				<pre><code>
-<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_ADDRESS</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">VOLT</span><span style="color: #000000">&gt; \</span>
-<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_TOKEN</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">TOKEN</span><span style="color: #000000">&gt; \</span>
-<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">DEBUG</span><span style="color: #000000">=</span><span style="color: #001080">vault</span><span style="color: #000000">-</span><span style="color: #001080">env</span><span style="color: #000000">-</span><span style="color: #001080">config</span><span style="color: #000000">; \</span>
-<span style="color: #001080">vec</span><span style="color: #000000"> </span><span style="color: #001080">read</span><span style="color: #000000"> \</span>
-<span style="color: #000000">-</span><span style="color: #001080">k</span><span style="color: #000000"> </span><span style="color: #001080">lapis</span><span style="color: #000000">/</span><span style="color: #001080">data</span><span style="color: #000000">/</span><span style="color: #001080">vancouver</span><span style="color: #000000">-</span><span style="color: #001080">ocean</span><span style="color: #000000">-</span><span style="color: #001080">wise</span><span style="color: #000000">/</span><span style="color: #001080">whale</span><span style="color: #000000">-</span><span style="color: #001080">watch</span><span style="color: #000000">/</span><span style="color: #001080">local</span><span style="color: #000000"> \</span>
-<span style="color: #000000">-</span><span style="color: #001080">e</span><span style="color: #000000"> ./.</span><span style="color: #001080">env</span>
 
 </code></pre>
 			</div>
