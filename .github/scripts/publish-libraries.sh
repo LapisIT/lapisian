@@ -31,18 +31,17 @@ then
 else
   export NX_BASE=$(git rev-parse HEAD~1)
 fi
-echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE"
-
+BEFORE_SHA=${{ github.event.before }}
+echo "GITHUB_BASE_REF: $GITHUB_BASE_REF, NX_BASE: $NX_BASE, BEFORE_SHA=$BEFORE_SHA"
 AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE --head=HEAD)
 AFFECTED=" vault-env-config "
-echo "AFFECTED: '$AFFECTED'"
-
+echo "Hardcoded AFFECTED: '$AFFECTED'"
 
 if [ "$AFFECTED" != "" ]; then
   cd "$PARENT_DIR"
   echo "Copy Environment Files"
-
-  while IFS= read -r -d $' ' lib; do
+  for lib in $AFFECTED
+  do
     echo "Setting version for $lib  '$ROOT_DIR/packages/${lib}'"
     cd "$PARENT_DIR"
     cd "$ROOT_DIR/packages/${lib}"
@@ -51,10 +50,11 @@ if [ "$AFFECTED" != "" ]; then
     cd "$PARENT_DIR"
     npm run build "$lib" -- --with-deps #--prod
     wait
-  done <<<"$AFFECTED " # leave space on end to generate correct output
+  done
 
   cd "$PARENT_DIR"
-  while IFS= read -r -d $' ' lib; do
+  for lib in $AFFECTED
+  do
     if [ "$DRY_RUN" == "False" ]; then
       echo "Publishing $lib"
       npm publish "$ROOT_DIR/dist/packages/${lib}" --access=public
@@ -62,7 +62,7 @@ if [ "$AFFECTED" != "" ]; then
       echo "Dry Run, not publishing $lib"
     fi
     wait
-  done <<<"$AFFECTED " # leave space on end to generate correct output
+  done
 else
   echo "No Libraries to publish"
 fi

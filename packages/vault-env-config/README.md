@@ -18,4 +18,3 @@ vec read \
 -e ./.env
 
 ```
-
