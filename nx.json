@@ -1,0 +1,21 @@
+{
+  "npmScope": "lapisian",
+  "affected": { "defaultBase": "master" },
+  "implicitDependencies": {
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ZDI3MjIxZmQtMjVlMy00ZTI0LWJmM2QtMmVkMDU4OGJjZTQwfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": { "vault-env-config": { "tags": [] } },
+  "workspaceLayout": { "appsDir": "packages", "libsDir": "packages" }
+}

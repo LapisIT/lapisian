@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@lapis-it/vault-env-config</title>
+	<meta name="description" content="Documentation for @lapis-it/vault-env-config">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@lapis-it/vault-env-config</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@lapis-it/vault-env-config</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><img src="src/images/vault.png" alt="Vault logo" title="Vault logo">
+				<img src="src/images/dotenv.png" alt="Dotenv logo" title="DotEnv logo"></p>
+				<a href="#vault-env-config" id="vault-env-config" style="color: inherit; text-decoration: none;">
+					<h1>vault-env-config</h1>
+				</a>
+				<p>Get </p>
+				<ul>
+					<li>Get key/value environment variables from Vault and store them in .env</li>
+					<li>Write key/value environment variables from .env to Vault</li>
+				</ul>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
+				<pre><code>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_ADDRESS</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">VOLT</span><span style="color: #000000">&gt; \</span>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">VAULT_TOKEN</span><span style="color: #000000">=&lt;</span><span style="color: #267F99">YOUR</span><span style="color: #000000"> </span><span style="color: #267F99">TOKEN</span><span style="color: #000000">&gt; \</span>
+<span style="color: #0000FF">export</span><span style="color: #000000"> </span><span style="color: #0070C1">DEBUG</span><span style="color: #000000">=</span><span style="color: #001080">vault</span><span style="color: #000000">-</span><span style="color: #001080">env</span><span style="color: #000000">-</span><span style="color: #001080">config</span><span style="color: #000000">; \</span>
+<span style="color: #001080">vec</span><span style="color: #000000"> </span><span style="color: #001080">read</span><span style="color: #000000"> \</span>
+<span style="color: #000000">-</span><span style="color: #001080">k</span><span style="color: #000000"> </span><span style="color: #001080">lapis</span><span style="color: #000000">/</span><span style="color: #001080">data</span><span style="color: #000000">/</span><span style="color: #001080">vancouver</span><span style="color: #000000">-</span><span style="color: #001080">ocean</span><span style="color: #000000">-</span><span style="color: #001080">wise</span><span style="color: #000000">/</span><span style="color: #001080">whale</span><span style="color: #000000">-</span><span style="color: #001080">watch</span><span style="color: #000000">/</span><span style="color: #001080">local</span><span style="color: #000000"> \</span>
+<span style="color: #000000">-</span><span style="color: #001080">e</span><span style="color: #000000"> ./.</span><span style="color: #001080">env</span>
+
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
