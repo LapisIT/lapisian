@@ -44,3 +44,4 @@ test_action.sh
 
 vault-env-config
 
+publish-libraries.sh
