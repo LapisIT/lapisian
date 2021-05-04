@@ -1,0 +1,14 @@
+{
+  "name": "@lapis-it/vault-env-config",
+  "version": "1.0.2",
+  "author": "Hiroki Gota",
+  "license": "MIT",
+  "bin": {
+    "@lapis-it/vec": "src/lib/bin/vec.js",
+    "vec": "src/lib/bin/vec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LapisIT/lapisian.git"
+  }
+}

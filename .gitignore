@@ -42,6 +42,6 @@ Thumbs.db
 node-vault
 test_action.sh
 
-vault-env-config
+vault-env-config-example
 
 publish-libraries.sh
