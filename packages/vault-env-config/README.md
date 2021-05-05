@@ -26,7 +26,7 @@ export VAULT_ADDRESS=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
 export DEBUG=vault-env-config; \
 vec read \
--k lapis/data/my-project/local \
+-k secret/data/my-project/local \
 -e ./local.env
 ```
 
@@ -38,7 +38,7 @@ export VAULT_ADDRESS=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
 export DEBUG=vault-env-config; \
 vec write \
--k lapis/data/my-project/local \
+-k secret/data/my-project/local \
 -e ./local.env
 ```
 
