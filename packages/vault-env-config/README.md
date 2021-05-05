@@ -7,13 +7,15 @@ using Vault API (node-vault https://www.npmjs.com/package/node-vault).
 * Read key/value environment variables from Vault and store them in .env
 * Write key/value environment variables from .env to Vault
 
+node-vault is using Vault API v1.
+
 # Usage
 ## Install
 ```
 npm i @lapis-it/vault-env-config
 ```
 ## Configure VAULT_ADDRESS and VAULT_TOKEN
-You can either include VAULT_ADDRESS and VAULT_TOKEN in .env or export as environment variable.
+You can either include VAULT_ADDRESS and VAULT_TOKEN in .env or export as environment variables.
 
 ## read
 * -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
@@ -34,7 +36,7 @@ vec read \
 export VAULT_ADDRESS=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
 export DEBUG=vault-env-config; \
-vec read \
+vec write \
 -k lapis/data/my-project/local \
 -e ./local.env
 ```
