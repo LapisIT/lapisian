@@ -7,7 +7,7 @@ using Vault API (node-vault https://www.npmjs.com/package/node-vault).
 * Read key/value environment variables from Vault and store them in .env
 * Write key/value environment variables from .env to Vault
 
-node-vault is using Vault API v1.
+node-vault is currently using Vault API v1 and does not support v2.
 
 # Usage
 ## Install
