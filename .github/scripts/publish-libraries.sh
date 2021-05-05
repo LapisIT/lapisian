@@ -38,9 +38,9 @@ AFFECTED=$(node node_modules/.bin/nx affected:libs --plain --base=$NX_BASE --hea
 AFFECTED=${AFFECTED//[$'\t\r\n']}
 echo "nx affected:libs --plain --base=$NX_BASE --head=HEAD: '$AFFECTED'"
 
-AFFECTED=$(npm run affected:libs --plain)
+AFFECTED=$(node node_modules/.bin/nx affected:libs --base=HEAD~1 --head=HEAD --plain)
 AFFECTED=${AFFECTED//[$'\t\r\n']}
-echo "npm run affected:libs: '$AFFECTED'"
+echo "--base=HEAD~1: '$AFFECTED'"
 
 AFFECTED=" vault-env-config "
 echo "Hardcoded AFFECTED: '$AFFECTED'"

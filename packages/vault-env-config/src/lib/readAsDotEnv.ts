@@ -1,8 +1,6 @@
-import * as dotenv from 'dotenv';
 import * as R from 'ramda';
 import { initVault } from './initVault';
 import { jsonToDotEnv } from './jsonToDotEnv';
-dotenv.config();
 const { path, } = R;
 
 /**
