@@ -89,13 +89,13 @@
 					<li>-e: Specify the path for .env file<br>```
 					export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec read \</li>
 				</ul>
-				<p>-k lapis/data/my-project/local <br>-e ./local.env</p>
+				<p>-k secret/data/my-project/local <br>-e ./local.env</p>
 				<pre><code>
 <span style="color: #000000">## </span><span style="color: #001080">write</span>
 <span style="color: #000000">* -k: </span><span style="color: #001080">The</span><span style="color: #000000"> </span><span style="color: #001080">Vault</span><span style="color: #000000"> </span><span style="color: #001080">key</span><span style="color: #000000">/</span><span style="color: #001080">value</span><span style="color: #000000"> </span><span style="color: #001080">secret</span><span style="color: #000000"> </span><span style="color: #001080">path</span><span style="color: #000000"> </span><span style="color: #001080">e</span><span style="color: #000000">.</span><span style="color: #001080">g</span><span style="color: #000000">. </span><span style="color: #001080">secret</span><span style="color: #000000">/</span><span style="color: #001080">data</span><span style="color: #000000">/:</span><span style="color: #795E26">path</span><span style="color: #000000"> (</span><span style="color: #001080">https</span><span style="color: #000000">:</span><span style="color: #008000">//www.vaultproject.io/api-docs/secret/kv/kv-v2)</span>
 <span style="color: #000000">* -</span><span style="color: #001080">e</span><span style="color: #000000">: </span><span style="color: #001080">Specify</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">path</span><span style="color: #000000"> </span><span style="color: #001080">for</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> .</span><span style="color: #001080">env</span><span style="color: #000000"> </span><span style="color: #001080">file</span><span style="color: #000000">   </span>
 </code></pre>
-				<p>export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec write <br>-k lapis/data/my-project/local <br>-e ./local.env</p>
+				<p>export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec write <br>-k secret/data/my-project/local <br>-e ./local.env</p>
 				<pre><code>
 
 </code></pre>
