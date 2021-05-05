@@ -12,9 +12,22 @@ using Vault API (node-vault https://www.npmjs.com/package/node-vault).
 ```
 npm i @lapis-it/vault-env-config
 ```
+## Configure VAULT_ADDRESS and VAULT_TOKEN
+You can either include VAULT_ADDRESS and VAULT_TOKEN in .env or export as environment variable.
 
 ## read
-You can either includ VAULT_ADDRESS and VAULT_TOKEN in .env or export.
+* -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
+* -e: Specify the path for .env file   
+```
+export VAULT_ADDRESS=<YOUR VOLT> \
+export VAULT_TOKEN=<YOUR TOKEN> \
+export DEBUG=vault-env-config; \
+vec read \
+-k lapis/data/my-project/local \
+-e ./local.env
+```
+
+## write
 * -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
 * -e: Specify the path for a .env file   
 ```
@@ -24,7 +37,6 @@ export DEBUG=vault-env-config; \
 vec read \
 -k lapis/data/my-project/local \
 -e ./local.env
-
 ```
 
 
