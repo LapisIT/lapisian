@@ -68,14 +68,34 @@
 					<li>Read key/value environment variables from Vault and store them in .env</li>
 					<li>Write key/value environment variables from .env to Vault</li>
 				</ul>
+				<p>node-vault is currently using Vault API v1 and does not support v2.</p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>Usage</h1>
 				</a>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">i</span><span style="color: #000000"> @</span><span style="color: #001080">lapis</span><span style="color: #000000">-</span><span style="color: #001080">it</span><span style="color: #000000">/</span><span style="color: #001080">vault</span><span style="color: #000000">-</span><span style="color: #001080">env</span><span style="color: #000000">-</span><span style="color: #001080">config</span>
+</code></pre>
+				<a href="#configure-vault_address-and-vault_token" id="configure-vault_address-and-vault_token" style="color: inherit; text-decoration: none;">
+					<h2>Configure VAULT_ADDRESS and VAULT_TOKEN</h2>
+				</a>
+				<p>You can either include VAULT_ADDRESS and VAULT_TOKEN in .env or export as environment variables.</p>
+				<a href="#read" id="read" style="color: inherit; text-decoration: none;">
+					<h2>read</h2>
+				</a>
 				<ul>
-					<li>-k The Vault key/value secret path e.g. secret/data/:path (<a href="https://www.vaultproject.io/api-docs/secret/kv/kv-v2">https://www.vaultproject.io/api-docs/secret/kv/kv-v2</a>)<br>```
+					<li>-k: The Vault key/value secret path e.g. secret/data/:path (<a href="https://www.vaultproject.io/api-docs/secret/kv/kv-v2">https://www.vaultproject.io/api-docs/secret/kv/kv-v2</a>)</li>
+					<li>-e: Specify the path for .env file<br>```
 					export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec read \</li>
 				</ul>
 				<p>-k lapis/data/my-project/local <br>-e ./local.env</p>
+				<pre><code>
+<span style="color: #000000">## </span><span style="color: #001080">write</span>
+<span style="color: #000000">* -k: </span><span style="color: #001080">The</span><span style="color: #000000"> </span><span style="color: #001080">Vault</span><span style="color: #000000"> </span><span style="color: #001080">key</span><span style="color: #000000">/</span><span style="color: #001080">value</span><span style="color: #000000"> </span><span style="color: #001080">secret</span><span style="color: #000000"> </span><span style="color: #001080">path</span><span style="color: #000000"> </span><span style="color: #001080">e</span><span style="color: #000000">.</span><span style="color: #001080">g</span><span style="color: #000000">. </span><span style="color: #001080">secret</span><span style="color: #000000">/</span><span style="color: #001080">data</span><span style="color: #000000">/:</span><span style="color: #795E26">path</span><span style="color: #000000"> (</span><span style="color: #001080">https</span><span style="color: #000000">:</span><span style="color: #008000">//www.vaultproject.io/api-docs/secret/kv/kv-v2)</span>
+<span style="color: #000000">* -</span><span style="color: #001080">e</span><span style="color: #000000">: </span><span style="color: #001080">Specify</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">path</span><span style="color: #000000"> </span><span style="color: #001080">for</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> .</span><span style="color: #001080">env</span><span style="color: #000000"> </span><span style="color: #001080">file</span><span style="color: #000000">   </span>
+</code></pre>
+				<p>export VAULT_ADDRESS=<YOUR VOLT> <br>export VAULT_TOKEN=<YOUR TOKEN> <br>export DEBUG=vault-env-config; <br>vec write <br>-k lapis/data/my-project/local <br>-e ./local.env</p>
 				<pre><code>
 
 </code></pre>
