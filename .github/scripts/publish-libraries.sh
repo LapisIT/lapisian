@@ -7,7 +7,6 @@ git config --local user.name "GitHub Action"
 # This script uses the parent version as the version to publish a library with
 
 getBuildType() {
-  echo "getBuildType $1"
   local release_type="minor"
   if [[ "$1" == *"major"* ]]; then
     release_type="major"
