@@ -8,7 +8,15 @@ using Vault API (node-vault https://www.npmjs.com/package/node-vault).
 * Write key/value environment variables from .env to Vault
 
 # Usage
-* -k The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)  
+## Install
+```
+npm i @lapis-it/vault-env-config
+```
+
+## read
+You can either includ VAULT_ADDRESS and VAULT_TOKEN in .env or export.
+* -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
+* -e: Specify the path for a .env file   
 ```
 export VAULT_ADDRESS=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
