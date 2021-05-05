@@ -9,10 +9,11 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "ZDI3MjIxZmQtMjVlMy00ZTI0LWJmM2QtMmVkMDU4OGJjZTQwfHJlYWQtd3JpdGU=",
-        "canTrackAnalytics": false,
-        "showUsageWarnings": true
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "strictlyOrderedTargets": ["package", "build", "copy-bin", "test", "lint", "deploy"],
+        "showUsageWarnings": true,
+        "canTrackAnalytics": false
       }
     }
   },

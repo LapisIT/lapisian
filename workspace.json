@@ -20,7 +20,7 @@
             "passWithNoTests": true
           }
         },
-        "build": {
+        "package": {
           "executor": "@nrwl/node:package",
           "outputs": ["{options.outputPath}"],
           "options": {
@@ -29,6 +29,27 @@
             "packageJson": "packages/vault-env-config/package.json",
             "main": "packages/vault-env-config/src/index.ts",
             "assets": ["packages/vault-env-config/*.md"]
+          }
+        },
+        "copy-bin": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              "echo $(pwd)",
+              "cp packages/vault-env-config/vec.js dist/packages/vault-env-config/src/lib/bin/",
+              "chmod +x dist/packages/vault-env-config/src/lib/bin/vec.js",
+              "ls -l dist/packages/vault-env-config/src/lib/bin/vec.js"
+            ]
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              "nx package vault-env-config",
+              "nx copy-bin vault-env-config"
+            ],
+            "parallel": false
           }
         }
       }

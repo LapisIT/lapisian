@@ -1,6 +1,7 @@
 import * as program from 'commander';
 import { readAsDotEnv } from '../readAsDotEnv';
 import * as Debug from 'debug';
+import { failIfNil } from '../ensure';
 const debug = Debug('vault-env-config');
 
 const initOptions = () => {
@@ -13,8 +14,6 @@ const initOptions = () => {
 
 (async (options) => {
   debug('options: ', options);
-  //failIfNil('Please specify a key for KV. -k lapis/your-project/key or --key==lapis/your-project/key', options.key);
+  failIfNil('options.key must be specified.', options.key);
   await readAsDotEnv(options.key, options.env);
-})(initOptions());
-
-
+})(initOptions()).catch(console.error);
