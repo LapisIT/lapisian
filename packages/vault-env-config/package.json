@@ -7,6 +7,9 @@
     "@lapis-it/vec": "src/lib/bin/vec.js",
     "vec": "src/lib/bin/vec.js"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/LapisIT/lapisian.git"
