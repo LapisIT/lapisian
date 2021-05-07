@@ -15,14 +15,14 @@ node-vault is currently using Vault API v1 and does not support v2.
 ```
 npm i @lapis-it/vault-env-config
 ```
-## Configure VAULT_ADDRESS and VAULT_TOKEN
-You can either include VAULT_ADDRESS and VAULT_TOKEN in .env or export as environment variables.
+## Configure VAULT_ADDR and VAULT_TOKEN
+You can either include VAULT_ADDR and VAULT_TOKEN in .env or export as environment variables.
 
 ## read
 * -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
 * -e: Specify the path for .env file   
 ```
-export VAULT_ADDRESS=<YOUR VOLT> \
+export VAULT_ADDR=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
 export DEBUG=vault-env-config; \
 vec read \
@@ -34,7 +34,7 @@ vec read \
 * -k: The Vault key/value secret path e.g. secret/data/:path (https://www.vaultproject.io/api-docs/secret/kv/kv-v2)
 * -e: Specify the path for a .env file   
 ```
-export VAULT_ADDRESS=<YOUR VOLT> \
+export VAULT_ADDR=<YOUR VOLT> \
 export VAULT_TOKEN=<YOUR TOKEN> \
 export DEBUG=vault-env-config; \
 vec write \

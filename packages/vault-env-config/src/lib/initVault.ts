@@ -6,11 +6,11 @@ const debug = Debug('vault-env-config');
 
 export const initVault =  async (): Promise<NodeVault.client> => {
   dotenv.config();
-  failIfNil('process.env.VAULT_ADDRESS must be specified.', process.env.VAULT_ADDRESS);
+  failIfNil('process.env.VAULT_ADDR must be specified.', process.env.VAULT_ADDR);
   failIfNil('process.env.VAULT_TOKEN must be specified.', process.env.VAULT_TOKEN);
 
   const options = {
-    endpoint: process.env.VAULT_ADDRESS,
+    endpoint: process.env.VAULT_ADDR,
   };
 
   // process.env.DEBUG = 'node-vault';

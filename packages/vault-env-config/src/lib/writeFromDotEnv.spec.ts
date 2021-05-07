@@ -17,10 +17,10 @@ describe(`writeFromDotEnv`, () => {
    node-vault 200 +133ms
    */
   it('should write foo', async () => {
-    expect(process.env.VAULT_ADDRESS).toBeDefined();
+    expect(process.env.VAULT_ADDR).toBeDefined();
     expect(process.env.VAULT_TOKEN).toBeDefined();
-    console.log('process.env.VAULT_ADDRESS: %s, process.env.VAULT_TOKEN: %s, process.cwd(): %s',
-      process.env.VAULT_ADDRESS,
+    console.log('process.env.VAULT_ADDR: %s, process.env.VAULT_TOKEN: %s, process.cwd(): %s',
+      process.env.VAULT_ADDR,
       process.env.VAULT_TOKEN,
       process.cwd());
 
@@ -34,9 +34,9 @@ describe(`writeFromDotEnv`, () => {
   });
 
   it('should write the k/v fro a dotEnv file to Vault', async () => {
-    expect(process.env.VAULT_ADDRESS).toBeDefined();
+    expect(process.env.VAULT_ADDR).toBeDefined();
     expect(process.env.VAULT_TOKEN).toBeDefined();
-    console.log('process.env.VAULT_ADDRESS: %s', process.env.VAULT_ADDRESS);
+    console.log('process.env.VAULT_ADDR: %s', process.env.VAULT_ADDR);
     const keyAsPath = 'lapis/data/vancouver-ocean-wise/whale-watch/test';
     const res = await writeFromDotEnv(keyAsPath, `${process.cwd()}/test.env`);
     console.log('res: %j', res);
