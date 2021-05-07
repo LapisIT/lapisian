@@ -1,6 +1,6 @@
 {
   "name": "@lapis-it/vault-env-config",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "author": "Hiroki Gota",
   "license": "MIT",
   "bin": {
