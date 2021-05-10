@@ -37,7 +37,7 @@ describe(`writeFromDotEnv`, () => {
     expect(process.env.VAULT_ADDR).toBeDefined();
     expect(process.env.VAULT_TOKEN).toBeDefined();
     console.log('process.env.VAULT_ADDR: %s', process.env.VAULT_ADDR);
-    const keyAsPath = 'lapis/data/vancouver-ocean-wise/whale-watch/test';
+    const keyAsPath = 'lapis/data/lapisian/test';
     const res = await writeFromDotEnv(keyAsPath, `${process.cwd()}/test.env`);
     console.log('res: %j', res);
     expect(res).toBeDefined();

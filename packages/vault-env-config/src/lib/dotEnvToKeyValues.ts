@@ -14,7 +14,9 @@ export const dotEnvToKeyValues =
   async (dotEnvPath = `${process.cwd()}/.env`): Promise<object> => {
   const data =  readFileSync(dotEnvPath, { encoding:'utf8' });
   const keyValues: KeyValuePair<string, string>[] =
-    splitByEOL(data).map(kvAsString => splitByEqual(kvAsString) as KeyValuePair<string, string>);
+    splitByEOL(data)
+      .filter(kv => kv.length > 1)
+      .map(kvAsString => splitByEqual(kvAsString) as KeyValuePair<string, string>);
   return fromPairs<string>(keyValues);
 }
 const splitByEOL = split(EOL);
