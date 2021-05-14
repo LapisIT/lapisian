@@ -1,6 +1,6 @@
 {
   "name": "@lapis-it/vault-env-config",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "author": "Hiroki Gota",
   "license": "MIT",
   "bin": {
@@ -19,4 +19,3 @@
     "url": "git://github.com/LapisIT/lapisian.git"
   }
 }
-
