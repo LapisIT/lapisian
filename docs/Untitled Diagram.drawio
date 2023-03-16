@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-16T00:29:46.126Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="b2QnRtn2W_ecCCfbOM6F" version="21.0.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-16T00:36:42.191Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="7ccRaUPVVQtteqskt7aU" version="21.0.6" type="github" pages="4">
   <diagram name="NSW Modernisation" id="XqPy8NkvguO4C5w6nWIH">
     <mxGraphModel dx="2325" dy="1130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -982,6 +982,128 @@
               <mxPoint x="8" y="-1647" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Q6DKXWajAMBRXKfCM-En" name="Lapis Future">
+    <mxGraphModel dx="3049" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-1" value="Cloud Architecture 2025&#xa;No Code or Low Code&#xa;Software 2.0 code by AI" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;fontStyle=1;spacing=3.8;verticalAlign=top;strokeOpacity=100;fillOpacity=100;fillColor=#ffe342;strokeWidth=1.5;lucidId=KEKFbkExrQbL;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1005" width="300" height="375" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-2" value="Serverless + Containers" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#ffe342;strokeWidth=1.5;lucidId=KEKF~CC_A8Zm;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1260" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-3" value="Cloud Architecture 2010&#xa;Cloud + Open Source" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;fontStyle=1;spacing=3.8;verticalAlign=top;strokeOpacity=100;fillOpacity=100;fillColor=#e5e5e5;strokeWidth=1.5;lucidId=.EKFCIF_KSZS;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="945" width="300" height="435" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-4" value="Restful API" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#d1bcd2;strokeWidth=1.5;lucidId=.EKF22f_hr5I;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1140" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-5" value="Framework" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#ffeca9;strokeWidth=1.5;lucidId=.EKFg6vMMizR;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1080" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-6" value="SPA + Hybrid (Web)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#b2d6ef;strokeWidth=1.5;lucidId=.EKFT5pD4N8g;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1020" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-7" value="Relational Database" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#f9d2de;strokeWidth=1.5;lucidId=.EKFLlpvrzDP;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1200" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-8" value="Virtual Machine" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#de5f85;strokeWidth=1.5;lucidId=.EKFLCZFBl3V;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1260" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-9" value="Purpose Built Database" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#ffe342;strokeWidth=1.5;lucidId=ZGKF2mBaHYVi;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1200" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-10" value="SDK + CDK" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#ffe342;strokeWidth=1.5;lucidId=IIKFJRPXuV8s;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1140" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-11" value="PWA + Hybrid (Web)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#b2d6ef;strokeWidth=1.5;lucidId=XJKFxhK1gRVH;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1080" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-12" value="Pipeline" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#adb6c0;strokeWidth=1.5;lucidId=RRKFVuygvXPe;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="1320" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-13" value="Pipeline" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=20.2;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#ffe342;strokeWidth=1.5;lucidId=gSKFHUQ27wuz;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="1320" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-14" value="" style="shape=singleArrow;arrowWidth=0.5;arrowSize=0.225;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcce14;strokeWidth=1.5;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="1163" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-15" value="Business Model 2022-2025" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=18.5;fontColor=default;spacing=3.8;verticalAlign=top;strokeOpacity=100;fillOpacity=100;fillColor=#fff3d9;strokeWidth=1.5;lucidId=54JFLjYeECm6;" vertex="1" parent="1">
+          <mxGeometry x="-495" width="495" height="495" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-16" value="Lapis Technology Landscape 2022-2025" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=18.5;fontColor=default;spacing=3.8;verticalAlign=top;strokeOpacity=100;fillOpacity=100;fillColor=#fff3d9;strokeWidth=1.5;lucidId=BVJFfR~zkmz0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="15" width="720" height="495" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-17" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;Mobile Internet&#xa;&#xa;4G+5G+Apps&#xa;&#xa;$318 billion (2020)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$613 billion (2025)&lt;/span&gt;&#xa;5.8 billion devices&#xa;60% of Internet traffic&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=Y7IF-h4ZHGN3;" vertex="1" parent="1">
+          <mxGeometry x="330" y="60" width="148" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-18" value="AI Services&#xa;&#xa;$126 billion" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#e3fae3;strokeWidth=1.5;lucidId=98IFG3nTKmFi;" vertex="1" parent="1">
+          <mxGeometry x="660" y="60" width="148" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-19" value="Virtual and augmented reality&#xa;&#xa;$7 billion (2022)&#xa;$80 billion (2025)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcfcca;strokeWidth=1.5;lucidId=p9IFYWoX3t56;" vertex="1" parent="1">
+          <mxGeometry x="553" y="210" width="148" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-20" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;Cloud Computing&#xa;&#xa;DX&#xa;&#xa;$543 billion (2021)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$864 billion (2025)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=kkJF6qnOc1Eu;" vertex="1" parent="1">
+          <mxGeometry x="495" y="60" width="148" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-21" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;IoT&#xa;&#xa;5G&#xa;&#xa;9 billion devices (2023)&#xa;30 billion devices (2025)&#xa;$330 billion (2020)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$875 billion (2025)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcfcca;strokeWidth=1.5;lucidId=XnJFnj32EEcY;" vertex="1" parent="1">
+          <mxGeometry x="718" y="210" width="163" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-22" value="Advanced robotics&#xa;&#xa;&#xa;$275 billion (2025)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#dfe3e8;strokeWidth=1.5;lucidId=gsJFxBI_dJqt;" vertex="1" parent="1">
+          <mxGeometry x="315" y="375" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-23" value="Biometric technology&#xa;&#xa;&#xa;$37 billion (2020)&#xa;$68 billion (2025)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcfcca;strokeWidth=1.5;lucidId=GzJFVz27oMu.;" vertex="1" parent="1">
+          <mxGeometry x="388" y="210" width="148" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-24" value="3D Printing&#xa;&#xa;&#xa;$13 billion (2020)&#xa;$32 billion (2025)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#dfe3e8;strokeWidth=1.5;lucidId=-CJF7PK2_8R0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="375" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-25" value="Genomics&#xa;&#xa;$54 billion (2025)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#dfe3e8;strokeWidth=1.5;lucidId=3EJFymZ92pmE;" vertex="1" parent="1">
+          <mxGeometry x="645" y="375" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-26" value="Blockchain&#xa;&#xa;&#xa;$7 billion (2022)&#xa;$37 billion (2025)&#xa;$94 billion (2027)" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcfcca;strokeWidth=1.5;lucidId=FGJFlcWg2g-q;" vertex="1" parent="1">
+          <mxGeometry x="225" y="210" width="148" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-27" value="Focused" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=R0JFyOLz6g1b;" vertex="1" parent="1">
+          <mxGeometry x="45" y="60" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-28" value="Adapted" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#e3fae3;strokeWidth=1.5;lucidId=k1JFA3lsxduW;" vertex="1" parent="1">
+          <mxGeometry x="45" y="135" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-29" value="Opporunities" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#fcfcca;strokeWidth=1.5;lucidId=E1JFnO_ngOYc;" vertex="1" parent="1">
+          <mxGeometry x="45" y="225" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-30" value="Observing" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#f2f3f5;strokeWidth=1.5;lucidId=91JFTJJgpS08;" vertex="1" parent="1">
+          <mxGeometry x="45" y="390" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-31" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;SaaS&#xa;CAGR 20%&#xa;API + AI&#xa;Value based pricing&#xa;$223 billion (2022)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$579 billion (2025)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#dfe3e8;strokeWidth=1.5;lucidId=.3JFgRq~kjLU;" vertex="1" parent="1">
+          <mxGeometry x="-315" y="210" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-32" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;DX Consulting&#xa;CAGR 13%&#xa;&#xa;$60 billion (2022)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$127 billion (2028)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=X8JFJ5Sqtyuq;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="45" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-33" value="Compound annual growth rate = CAGR" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=0;fillOpacity=0;fillColor=#ffffff;strokeWidth=1.5;lucidId=n_JFznz~tP3G;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="420" width="270" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-34" value="Focused" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=r.JFfHx-P31_;" vertex="1" parent="1">
+          <mxGeometry x="-645" y="75" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-35" value="Observing" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;fontColor=default;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#f2f3f5;strokeWidth=1.5;lucidId=r.JFvBHA-0v.;" vertex="1" parent="1">
+          <mxGeometry x="-645" y="240" width="148" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-36" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;Software Consulting&#xa;CAGR 9%&#xa;&#xa;$229 billion (2022)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$365 billion (2027)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=UvKFNBVA3AJU;" vertex="1" parent="1">
+          <mxGeometry x="-323" y="45" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-37" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;IT Consulting&#xa;CAGR 8%&#xa;&#xa;$? billion (2022)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$478 billion (2025)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#c3f7c8;strokeWidth=1.5;lucidId=9xKFP1rjzLce;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="45" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nQoahAK-cqZotHH7Mp_Q-38" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#000000;&quot;&gt;Low No Code Dev&#xa;CAGR 54%&#xa;&#xa;&#xa;$13 billion (2022)&#xa;&lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#000000;font-weight: bold;&quot;&gt;$45 billion (2025)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=13;spacing=3.8;strokeOpacity=100;fillOpacity=100;fillColor=#dfe3e8;strokeWidth=1.5;lucidId=FHMFIP31cdGM;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="210" width="148" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
