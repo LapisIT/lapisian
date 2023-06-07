@@ -10,7 +10,8 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["packages/vault-env-config/**/*.ts"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -32,7 +33,7 @@
           }
         },
         "copy-bin": {
-          "builder": "@nrwl/workspace:run-commands",
+          "executor": "@nrwl/workspace:run-commands",
           "options": {
             "commands": [
               "echo $(pwd)",
@@ -43,7 +44,7 @@
           }
         },
         "build": {
-          "builder": "@nrwl/workspace:run-commands",
+          "executor": "@nrwl/workspace:run-commands",
           "options": {
             "commands": [
               "nx package vault-env-config",
@@ -52,8 +53,8 @@
             "parallel": false
           }
         }
-      }
+      },
+      "tags": []
     }
-  },
-  "cli": { "defaultCollection": "@nrwl/workspace" }
+  }
 }
