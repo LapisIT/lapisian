@@ -1,8 +1,13 @@
 {
   "npmScope": "lapisian",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     ".eslintrc.json": "*"
   },
   "tasksRunnerOptions": {
@@ -11,12 +16,54 @@
       "options": {
         "accessToken": "ZDI3MjIxZmQtMjVlMy00ZTI0LWJmM2QtMmVkMDU4OGJjZTQwfHJlYWQtd3JpdGU=",
         "cacheableOperations": ["build", "test", "lint", "e2e"],
-        "strictlyOrderedTargets": ["package", "build", "copy-bin", "test", "lint", "deploy"],
         "showUsageWarnings": true,
         "canTrackAnalytics": false
       }
     }
   },
-  "projects": { "vault-env-config": { "tags": [] } },
-  "workspaceLayout": { "appsDir": "packages", "libsDir": "packages" }
+  "workspaceLayout": {
+    "appsDir": "packages",
+    "libsDir": "packages"
+  },
+  "targetDependencies": {
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "copy-bin": [
+      {
+        "target": "copy-bin",
+        "projects": "dependencies"
+      }
+    ],
+    "test": [
+      {
+        "target": "test",
+        "projects": "dependencies"
+      }
+    ],
+    "lint": [
+      {
+        "target": "lint",
+        "projects": "dependencies"
+      }
+    ],
+    "deploy": [
+      {
+        "target": "deploy",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  }
 }
