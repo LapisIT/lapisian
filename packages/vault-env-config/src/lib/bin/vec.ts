@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import * as dotenv from 'dotenv';
-import * as program from 'commander';
+import { program } from '@commander-js/extra-typings';
 dotenv.config();
 
 program
