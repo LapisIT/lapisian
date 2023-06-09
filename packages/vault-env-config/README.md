@@ -1,14 +1,14 @@
 ![Vault-Env-Config logo](https://github.com/LapisIT/lapisian/raw/master/packages/vault-env-config/src/images/vault-env-config.png "Vault logo")
 
-
 # vault-env-config
-vault-env-config CLI provides 2 commands to integrate with Vault (https://www.vaultproject.io/) 
-using Vault API (node-vault https://www.npmjs.com/package/node-vault).
+vault-env-config, `vec` is CLI to `read/write` Vault key-value Secrets to/from a `.env` file. 
 
-* Read key/value environment variables from Vault and store them in .env
-* Write key/value environment variables from .env to Vault
+* Read key/value secrets Json from Vault to .env
+* Write key/value secrets in .env to Vault 
 
-node-vault is currently using Vault API v1 and does not support v2.
+# Vault API v1
+`vec` uses `node-vault` module to call Vault API (node-vault https://www.npmjs.com/package/node-vault).
+`node-vault` is currently using Vault API v1 and v2 is not supported.
 
 # Usage
 ## Install
