@@ -16,5 +16,5 @@ const initOptions = (): VecOptions => {
 (async (options: VecOptions) => {
   debug('options: ', options);
   failIfNil('options.key must be specified.', options.key);
-  await readAsDotEnv(options.key, options.env);
+  await readAsDotEnv(options.key, options.env).catch(err => process.exit(1));
 })(initOptions()).catch(console.error);
