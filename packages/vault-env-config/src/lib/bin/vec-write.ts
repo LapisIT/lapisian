@@ -16,7 +16,7 @@ const initOptions = (): VecOptions => {
 (async (options: VecOptions) => {
   debug('options: ', options);
   //failIfNil('Please specify a key for KV. -k lapis/your-project/key or --key==lapis/your-project/key', options.key);
-  await writeFromDotEnv(options.key, options.env);
+  await writeFromDotEnv(options.key, options.env).catch(err => process.exit(1));;
 })(initOptions());
 
 
